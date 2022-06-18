@@ -20,20 +20,8 @@ public class BFAnalysis {
 
     }
 
-    // Function to convert
-    // byte value to String value
-    public static String
-    convertByteToString(byte byteValue)
-    {
 
-        // Convert byte value to String value
-        // using + operator method
-
-        return ("" + byteValue);
-    }
-
-
-    public static Result preprocess(String code) {
+    private static Result preprocess(String code) {
         charArray = code.toCharArray();
         for (srcPointer = 0; srcPointer < charArray.length; srcPointer++) {
             if (charArray[srcPointer] == 'd') {
@@ -52,7 +40,7 @@ public class BFAnalysis {
         return new Result(true, 0, code);
     }
 
-    public static StringBuilder interpret(String code) {
+    private static StringBuilder interpret(String code) {
         for (srcPointer = 0; srcPointer < charArray.length; srcPointer++) {
             if (bfchars.contains(charArray[srcPointer])) {
                 if (charArray[srcPointer] == ('d') && mem[memPtr] == 1) {
