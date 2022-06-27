@@ -19,6 +19,7 @@ note left: Interprets the provided code and runs it.
 
 
 
+
 @enduml
 ----
 
@@ -26,4 +27,16 @@ note left: Interprets the provided code and runs it.
 === Technical Context
 
 
-' Asdf characters
+==== Asdf characters
+
+[options="header",cols="1,2"]
+|===
+Character|Explanation
+|a| Sets toogle flag to true and current location in memory + 1 as well as printing the second memory position, if called twice on position 1.
+|s|If the toggle flag is false go one memory-position to the right. If its true then set it to false and move the memory pointer to the left.
+|d|Opening bracket and runs the code till the next f. Sets the toggle flag to false.
+|f|Closing bracket and makes, that the execution continues at the corresponding d. Sets the toggle flag to false.
+|g|Substracts -1 at the current location in memory.
+|h| Sets the toggle flag to false.
+
+|===

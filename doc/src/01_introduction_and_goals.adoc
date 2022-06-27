@@ -1,7 +1,7 @@
 [[section-introduction-and-goals]]
 == Introduction and Goals
 In this project it is all about building a Interpreter for the esolang asdf. The goal is to interpret asdf to java code, that can be easily run by the jdk.
-
+I have done this, because asdf is similar to brainfuck and as such easy to understand.
 
 === Requirements Overview
 The requirements of this project are:

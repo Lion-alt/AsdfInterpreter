@@ -18,7 +18,9 @@ public class Bracketsaver {
                     bracketTable.put(srcPointer, previousOpenBracket);
 
                 } else {
-                    return new Result(false, srcPointer, code);
+                    // tag::exception[]
+                    return new Result(false, srcPointer,new StringBuilder("Wrong f at position" + srcPointer + "in" + code));
+                    // end::exception[]
                 }
             }
         }

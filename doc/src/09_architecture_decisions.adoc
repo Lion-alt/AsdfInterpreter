@@ -2,4 +2,9 @@
 == Architecture Decisions
 
 
+=== Use one interface
+
+=== Refactor the logic of each letter into its own class (f. e. A)
+
+=== Outsource the Bracketsaver into its own class
 

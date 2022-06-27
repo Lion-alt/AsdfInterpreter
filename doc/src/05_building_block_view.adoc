@@ -5,81 +5,72 @@
 
 
 
-=== Whitebox Overall System
-' Console in und Output
-' Asdf characters
 
-
-_**<Overview Diagram>**_
-
-Motivation::
-
-_<text explanation>_
-
-
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
-
-Important Interfaces::
-_<Description of important interfaces>_
-' Standard in und out
-' Asdf characters
-
-
-
-==== <Name black box 1>
-
-
-
-_<Purpose/Responsibility>_
-
-_<Interface(s)>_
-
-_<(Optional) Quality/Performance Characteristics>_
-
-_<(Optional) Directory/File Location>_
-
-_<(Optional) Fulfilled Requirements>_
-
-_<(optional) Open Issues/Problems/Risks>_
+=== Important Interfaces
 
 
 
 
-==== <Name black box 2>
-
-_<black box template>_
-
-==== <Name black box n>
-
-_<black box template>_
+==== Syntax handling
 
 
-==== <Name interface 1>
 
-...
+===== Purpose/Responsibility
+To secure valid syntax a good syntax handling is indispensable.
 
-==== <Name interface m>
+
+[source, java]
+----
+include::../../src/Bracketsaver.java[tags=exception]
+----
+This is the handling of a error if the syntax of the brackets(d and f) isn't valid.
+
+
+
+
+
 
 
 
 === Level 2
 
-' Class diagram
-==== White Box Action
+==== Class Diagram
+image::../images/classdiagram.png[]
 
 
 
-_<white box template>_
-
-==== White Box _<building block 2>_
-
-
-_<white box template>_
-
-...
-
-==== White Box _<building block m>_
+==== Action
+[source, java]
+----
+include::../../src/Action.java[]
+----
+This is the central interface Action and it has a method run.
+Every class that implements this interface has to override this run function.
 
 
-_<white box template>_
+
+==== Why implemented with Interface
+This is very good, because for example a A and a S object both have a run function which makes the code execution simpler as seen below.
+[source, java]
+----
+include::../../src/ASDFAnalysis.java[tags=runCode]
+----
+
+==== Bracketsaver and Result
+[source, java]
+----
+include::../../src/Bracketsaver.java[]
+----
+The Bracketsaver saves all d -> f pairs and saves them into a Hashtable.
+
+==== A - H
+
+The classes A - H do the things as explained in chapter 3.
+
+This is how the letter a is implemented. The class A needs two arguments in the constructor, to detect if it has to write to the output.
+[source, java]
+----
+include::../../src/A.java[]
+----
+
+

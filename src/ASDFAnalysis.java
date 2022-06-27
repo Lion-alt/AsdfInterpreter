@@ -18,6 +18,12 @@ public class ASDFAnalysis {
     public static void main(String[] args) {
         String code = "aasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasaahsgggsasagsaahsaaaaaaasaaahsaaasaahsgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggagsaahsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasaahsggggggggagsaahsaaasaahsggggggagsaahsggggggggagsaa";
         Result result = preprocess(code);
+        // tag::handleexception[]
+        if(!result.result) {
+            System.out.println(result.code);
+            System.exit(1);
+        }
+        // end::handleexception[]
         interpret();
         System.out.println(runInterpretation());
     }
@@ -30,7 +36,7 @@ public class ASDFAnalysis {
         charArray = code2.toString().toCharArray();
         return Bracketsaver.saveBrackets(charArray, code2);
     }
-
+    // tag::runCode[]
     private static StringBuilder runInterpretation() {
         while(!actions.isEmpty()) {
             Action action = actions.pop();
@@ -38,6 +44,7 @@ public class ASDFAnalysis {
         }
         return output;
     }
+    // end::runCode[]
 
 
     private static void interpret() {
