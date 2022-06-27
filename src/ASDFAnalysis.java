@@ -42,7 +42,7 @@ public class ASDFAnalysis {
 
     private static void interpret() {
         for (srcPointer = 0; srcPointer < charArray.length; srcPointer++) {
-            if (ASDFAnalysis.charArray.length <= srcPointer + 1) {
+            if (charArray.length <= srcPointer + 1) {
                 continue;
             }
             if (bfchars.contains(charArray[srcPointer])) {
@@ -50,7 +50,7 @@ public class ASDFAnalysis {
                     actions.push(new D());
                 }
                 if (charArray[srcPointer] == ('f') && mem[memPtr] == 0) {
-                    actions.push(new D());
+                    actions.push(new F());
                 }
                 if (charArray[srcPointer] == 's') {
                     actions.push(new S());

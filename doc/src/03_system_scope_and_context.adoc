@@ -1,0 +1,29 @@
+[[section-system-scope-and-context]]
+== System Scope and Context
+
+
+
+
+
+=== Business Context
+
+
+[plantuml]
+----
+@startuml
+actor Human 
+note left: Interacts with the program by providing the asdf code.
+actor Program
+note left: Interprets the provided code and runs it.
+
+
+
+
+@enduml
+----
+
+
+=== Technical Context
+
+
+' Asdf characters

@@ -1,0 +1,25 @@
+[[section-introduction-and-goals]]
+== Introduction and Goals
+In this project it is all about building a Interpreter for the esolang asdf. The goal is to interpret asdf to java code, that can be easily run by the jdk.
+
+
+=== Requirements Overview
+The requirements of this project are:
+- Build a  interpreter
+- Build a interpreter, that can output real characters on the console
+
+
+=== Quality Goals
+
+[options="header",cols="1,2"]
+|===
+|Quality Goal|Explanation
+|  Output text on console | Text can be better understood than numbers, so number ouput is only outputed when the user wants to.
+| Enable the user to give the program its own code | Interpret the input through the command line.
+|===
+
+=== Stakeholders
+The Stakeholder of this project is Mr. von Kaenel.
+
+
+

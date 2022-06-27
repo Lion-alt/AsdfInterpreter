@@ -1,0 +1,16 @@
+[[section-solution-strategy]]
+== Solution Strategy
+
+
+=== Construction
+
+Asdf is a Java program. It consists of the following steps:
+
+It preprocesses the code and puts it into the right order.
+After that it runs the code successively and prints the ouput to the command line.
+
+=== Connection
+
+Asdf doesn't have a graphical interface.
+Instead it gets the user input from in- and output. 
+
