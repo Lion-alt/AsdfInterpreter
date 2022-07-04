@@ -7,23 +7,29 @@
 [plantuml]
 ----
 @startuml
-: Preprocess d and f positions to know on runtime what to do.
-: Interpret the code by pushing respective actions to a stack .
-: Run the interpretation by poping one item after another from the stack and excecting the run method from the object.
+note left: Preprocess d and f positions to know on runtime what to do.
+note right: Interpret the code by pushing respective actions to a stack .
+note left: Run the interpretation by poping one item after another from the stack and excecting the run method from the object.
 @enduml
 ----
 
 === Error occurs
+
 [plantuml]
 ----
 @startuml
-: Preprocess d and f.
-: If error occurs prints it to standard ouptut and ends program.
+note left: Preprocess d and f.
+note right: If error occurs prints it to standard ouptut and ends program.
 @enduml
 ----
 
 === Helloworld program
 
+
+[asdf]
+----
+aasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasaahsgggsasagsaahsaaaaaaasaaahsaaasaahsgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggagsaahsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasaahsggggggggagsaahsaaasaahsggggggagsaahsggggggggagsaa
+----
 
 
 

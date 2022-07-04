@@ -25,11 +25,7 @@ endif::backend-html5[]
 // configure EN settings for asciidoc
 include::src/config.adoc[]
 
-
-include::src/about-arc42.adoc[]
-
 // horizontal line
-***
 
 
 

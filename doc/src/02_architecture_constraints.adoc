@@ -5,7 +5,7 @@
 |===
 |Constraint|Explanation, Background
 |Implementation in Java|Implementation in Java, Version 16 and it should also run on newer versions.
-| Don't use any not-standard Java packages| For the implementation it is not allowed to use a additional library to convert a (ascii) number into a string
+| Don't use any not-standard Java packages| For the implementation it is not allowed to use a additional library to convert an (ascii) number into a string.
 | Github | This project is versioned with github.
 | Topic | Build a transpiler, compiler or interpreter
 

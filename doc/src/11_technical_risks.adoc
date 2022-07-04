@@ -1,5 +1,16 @@
 [[section-technical-risks]]
 == Risks and Technical Debts
 
+The technical risks are the following:
 
+- User input is not validated.
+- Input is not handled correctly and if too much input is provided, the program may break.
+- This program is an absolute gift for every hacker, because it is touring-complete. A hacker could easily hack the deployment system, if the deployment is done with for example Heroku.
+
+
+== Overall risks
+
+Overall risks include things like outdated java version or developer sweeping.
+
+image::../images/risks.jpeg[]
 

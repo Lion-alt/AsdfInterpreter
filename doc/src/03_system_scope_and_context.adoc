@@ -11,12 +11,23 @@
 [plantuml]
 ----
 @startuml
-actor Human 
+actor Human
 note left: Interacts with the program by providing the asdf code.
-actor Program
+rectangle Program
+
+
+
+
+rectangle "Program" {
+    rectangle "Asdf Interpretation" as SRAM
 note left: Interprets the provided code and runs it.
+    card "Preprocessing"  as CFG
+    note left: Preprocesses the code and saves it.
+}
 
-
+SRAM <--> CFG
+Human   --> CFG: "Provides asdf code"
+SRAM --> Human: "Prints result"
 
 
 

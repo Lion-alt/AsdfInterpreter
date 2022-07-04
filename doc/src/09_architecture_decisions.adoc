@@ -4,7 +4,10 @@
 
 === Use one interface
 
+Every new letter, for example x is a Action and has to implement from the interface Action and therefore have a run method.
+
 === Refactor the logic of each letter into its own class (f. e. A)
+Every Letter has to have its own class and constructor arguments if needed.
 
 === Outsource the Bracketsaver into its own class
-
+Outsource logic into respective classes. The bracketsaver has to be its own class, to handle the state of the brackettable and stack. The runtime stack could also be an extra class, but for organisational reasons I haven't implemented it.

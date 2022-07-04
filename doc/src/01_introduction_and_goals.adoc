@@ -19,7 +19,7 @@ The requirements of this project are:
 |===
 
 === Stakeholders
-The Stakeholder of this project is Mr. von Kaenel.
+The stakeholder of this project is Mr. von Kaenel.
 
 
 

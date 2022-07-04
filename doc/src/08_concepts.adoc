@@ -7,16 +7,9 @@
 
 === Versioning
 
-_<explanation>_
+The versioning is done with GitHub. The github repo link is (https://www.github.com/Lion-alt/AsdfInterpreter)
 
 
 
-=== _<Concept 2>_
 
-_<explanation>_
 
-...
-
-=== _<Concept n>_
-
-_<explanation>_

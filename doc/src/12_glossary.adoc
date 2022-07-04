@@ -7,9 +7,9 @@
 |===
 |Term |Definition
 
-|<Term-1>
-|<definition-1>
+|Polymorphism
+|A technical concept, in object-oriented programming, where many classes implement from one interface. In this project the action interface enforces, that always the run method can be run on a action object.
 
-|<Term-2>
-|<definition-2>
+|Interpreter
+|A interpreter interprets code from a programming language into another programming language and executes the interpreted code. An example for this was for a long time (not anymore) Javascript. In this project the language asdf (with additional letters g and h) is interpreted into Java.
 |===
